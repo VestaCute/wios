@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		532DCD46258130A500EEEBE1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 532DCD45258130A500EEEBE1 /* GoogleService-Info.plist */; };
 		53401F2B25792538003D41A5 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53401F2A25792538003D41A5 /* MainTabBarController.swift */; };
 		53401F2E25792624003D41A5 /* PeopleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53401F2D25792624003D41A5 /* PeopleViewController.swift */; };
 		5340854B257BE80B00848094 /* SectionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5340854A257BE80B00848094 /* SectionHeader.swift */; };
@@ -44,9 +45,13 @@
 		53DC1092257D2677008EC261 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53DC1091257D2677008EC261 /* UserCell.swift */; };
 		53DC1096257D30A0008EC261 /* UIViewController + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53DC1095257D30A0008EC261 /* UIViewController + Extension.swift */; };
 		53FE01FB257FE256001A7233 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53FE01FA257FE256001A7233 /* ProfileViewController.swift */; };
+		C35DB1DEBB089D4C9D51FAE5 /* Pods_wios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 416F84C89B440AC59D565E5F /* Pods_wios.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		38D6B33BC8406649370FCA50 /* Pods-wios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wios.release.xcconfig"; path = "Target Support Files/Pods-wios/Pods-wios.release.xcconfig"; sourceTree = "<group>"; };
+		416F84C89B440AC59D565E5F /* Pods_wios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_wios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		532DCD45258130A500EEEBE1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		53401F2A25792538003D41A5 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		53401F2D25792624003D41A5 /* PeopleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleViewController.swift; sourceTree = "<group>"; };
 		5340854A257BE80B00848094 /* SectionHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionHeader.swift; sourceTree = "<group>"; };
@@ -86,6 +91,7 @@
 		53DC1091257D2677008EC261 /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
 		53DC1095257D30A0008EC261 /* UIViewController + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController + Extension.swift"; sourceTree = "<group>"; };
 		53FE01FA257FE256001A7233 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		88CC973C4A12CB33A1C30378 /* Pods-wios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wios.debug.xcconfig"; path = "Target Support Files/Pods-wios/Pods-wios.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,12 +99,22 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C35DB1DEBB089D4C9D51FAE5 /* Pods_wios.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		054540CFBDD5A94804A774CC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				88CC973C4A12CB33A1C30378 /* Pods-wios.debug.xcconfig */,
+				38D6B33BC8406649370FCA50 /* Pods-wios.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		53401F2825792466003D41A5 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -118,6 +134,8 @@
 			children = (
 				53515FD22575510C007C2DE4 /* wios */,
 				53515FD12575510C007C2DE4 /* Products */,
+				054540CFBDD5A94804A774CC /* Pods */,
+				DFBFBB6DDAC3EC65726E58C5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -132,9 +150,9 @@
 		53515FD22575510C007C2DE4 /* wios */ = {
 			isa = PBXGroup;
 			children = (
-				53DC108D257D2144008EC261 /* Model */,
 				53515FD32575510C007C2DE4 /* AppDelegate.swift */,
 				53515FD52575510C007C2DE4 /* SceneDelegate.swift */,
+				53DC108D257D2144008EC261 /* Model */,
 				53401F2825792466003D41A5 /* Controllers */,
 				53AF9FE4257BD2C800C3A225 /* Protocols */,
 				53CF564C2579137000F5B523 /* Signin&Auth */,
@@ -142,6 +160,7 @@
 				53515FDC2575510E007C2DE4 /* Assets.xcassets */,
 				53515FDE2575510E007C2DE4 /* LaunchScreen.storyboard */,
 				53515FE12575510E007C2DE4 /* Info.plist */,
+				532DCD45258130A500EEEBE1 /* GoogleService-Info.plist */,
 				53AF2615257D3E0100388CB8 /* activeChats.json */,
 				53AF2614257D3E0100388CB8 /* users.json */,
 				53AF2616257D3E0100388CB8 /* waitingChats.json */,
@@ -224,6 +243,14 @@
 			path = Header;
 			sourceTree = "<group>";
 		};
+		DFBFBB6DDAC3EC65726E58C5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				416F84C89B440AC59D565E5F /* Pods_wios.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -231,9 +258,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 53515FE42575510E007C2DE4 /* Build configuration list for PBXNativeTarget "wios" */;
 			buildPhases = (
+				B438D47791E0D671385D6FE8 /* [CP] Check Pods Manifest.lock */,
 				53515FCC2575510C007C2DE4 /* Sources */,
 				53515FCD2575510C007C2DE4 /* Frameworks */,
 				53515FCE2575510C007C2DE4 /* Resources */,
+				B1FE2536CC804FA6035E5412 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -286,10 +315,53 @@
 				53AF2618257D3E0100388CB8 /* activeChats.json in Resources */,
 				53515FDD2575510E007C2DE4 /* Assets.xcassets in Resources */,
 				53AF2619257D3E0100388CB8 /* waitingChats.json in Resources */,
+				532DCD46258130A500EEEBE1 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B1FE2536CC804FA6035E5412 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-wios/Pods-wios-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-wios/Pods-wios-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-wios/Pods-wios-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B438D47791E0D671385D6FE8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-wios-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		53515FCC2575510C007C2DE4 /* Sources */ = {
@@ -463,6 +535,7 @@
 		};
 		53515FE52575510E007C2DE4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 88CC973C4A12CB33A1C30378 /* Pods-wios.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -482,6 +555,7 @@
 		};
 		53515FE62575510E007C2DE4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 38D6B33BC8406649370FCA50 /* Pods-wios.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
