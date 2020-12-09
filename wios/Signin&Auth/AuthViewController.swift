@@ -20,6 +20,8 @@ class AuthViewController: UIViewController {
     let googleButton = UIButton(title: "Or sign up with Google", titleColor: .black, backgroundColor: .white, isShadow: true)
     let loginButton = UIButton(title: "Login", titleColor: .link, backgroundColor: .white, isShadow: true)
     
+    let signUpVC = SingUpViewController()
+    let loginVC = LoginViewController()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,6 +29,19 @@ class AuthViewController: UIViewController {
         googleButton.costomizedGoogleButtom()
         view.backgroundColor = .white
         setupConstarains()
+        
+        emailButton.addTarget(self, action: #selector(emailButtonTapped), for: .touchUpInside)
+        loginButton.addTarget(self, action: #selector(loginButtonTapped), for: .touchUpInside)
+    }
+    
+    @objc private func emailButtonTapped() {
+        print (#function)
+        present(signUpVC, animated: true, completion: nil)
+    }
+    
+    @objc private func loginButtonTapped() {
+        print (#function)
+        present(loginVC, animated: true, completion: nil)
     }
 }
 // Setup Constains

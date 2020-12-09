@@ -19,7 +19,7 @@ class LoginViewController: UIViewController {
     let googleButton = UIButton(title: "Google", titleColor: .black, backgroundColor: .white, isShadow: true)
     let emailTextField = OneLineTextField(font: .SFPro20())
     let passwordTextField = OneLineTextField(font: .SFPro20())
-    let loginButtom = UIButton(title: "Login", titleColor: .white, backgroundColor: .black)
+    let loginButton = UIButton(title: "Login", titleColor: .white, backgroundColor: .black)
     
     let signInButton: UIButton = {
         let button = UIButton(type: .system)
@@ -35,6 +35,19 @@ class LoginViewController: UIViewController {
         googleButton.costomizedGoogleButtom()
         view.backgroundColor = .white
         setupConstraints()
+        
+        loginButton.addTarget(self, action: #selector(loginButtonTapped), for: .touchUpInside)
+    }
+    @objc private func loginButtonTapped() {
+        print (#function)
+        AuthService.shared.login(email: emailTextField.text!, password: passwordTextField.text!) { (result) in
+            switch result {
+            case .success(let user):
+                self.showAlert(with: "Успешно", and: "Вы авторизованы")
+            case .failure(let error):
+                self.showAlert(with: "Произошла ошибка!", and: error.localizedDescription)
+            }
+        }
     }
 }
 
@@ -47,8 +60,8 @@ extension LoginViewController {
         
         let passwordStackView = UIStackView(arrangedSubviews: [passwordLabel,passwordTextField], axis: .vertical, spacing: 0)
         
-        loginButtom.heightAnchor.constraint(equalToConstant: 60).isActive = true
-        let stackView = UIStackView(arrangedSubviews: [loginWithView,orLabel,emailStackView,passwordStackView, loginButtom], axis: .vertical, spacing: 40)
+        loginButton.heightAnchor.constraint(equalToConstant: 60).isActive = true
+        let stackView = UIStackView(arrangedSubviews: [loginWithView,orLabel,emailStackView,passwordStackView, loginButton], axis: .vertical, spacing: 40)
         
         signInButton.contentHorizontalAlignment = .leading
         let bottomStackView = UIStackView(arrangedSubviews: [needAnAccounLabel,signInButton], axis: .horizontal, spacing: 10)
