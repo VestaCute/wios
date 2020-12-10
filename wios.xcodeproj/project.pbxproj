@@ -138,8 +138,8 @@
 		53401F2825792466003D41A5 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				53CF564E2579143900F5B523 /* ListViewController.swift */,
 				53401F2A25792538003D41A5 /* MainTabBarController.swift */,
+				53CF564E2579143900F5B523 /* ListViewController.swift */,
 				53401F2D25792624003D41A5 /* PeopleViewController.swift */,
 				53FE01FA257FE256001A7233 /* ProfileViewController.swift */,
 				53DC108F257D2320008EC261 /* Header */,
