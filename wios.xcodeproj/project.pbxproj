@@ -129,16 +129,6 @@
 			path = ../../..;
 			sourceTree = "<group>";
 		};
-		53206B002582195200805F95 /* Helpers */ = {
-			isa = PBXGroup;
-			children = (
-				53206AF9258210D400805F95 /* Validators.swift */,
-				53206AFC2582147A00805F95 /* AuthError.swift */,
-			);
-			name = Helpers;
-			path = ..;
-			sourceTree = "<group>";
-		};
 		53401F2825792466003D41A5 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -181,7 +171,7 @@
 				53CF564C2579137000F5B523 /* Signin&Auth */,
 				53AF9FE4257BD2C800C3A225 /* Protocols */,
 				53B2A69A257654BF00942C4C /* Extension */,
-				53206B002582195200805F95 /* Helpers */,
+				53E0B50E25821AEB00BCF5C9 /* Helpers */,
 				53515FDC2575510E007C2DE4 /* Assets.xcassets */,
 				53515FDE2575510E007C2DE4 /* LaunchScreen.storyboard */,
 				53515FE12575510E007C2DE4 /* Info.plist */,
@@ -267,6 +257,15 @@
 				5340854A257BE80B00848094 /* SectionHeader.swift */,
 			);
 			path = Header;
+			sourceTree = "<group>";
+		};
+		53E0B50E25821AEB00BCF5C9 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				53206AF9258210D400805F95 /* Validators.swift */,
+				53206AFC2582147A00805F95 /* AuthError.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 		53FD648325813CCA008CE6D3 /* Services */ = {
