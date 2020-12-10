@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		53206AFA258210D400805F95 /* Validators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53206AF9258210D400805F95 /* Validators.swift */; };
+		53206AFD2582147A00805F95 /* AuthError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53206AFC2582147A00805F95 /* AuthError.swift */; };
 		532DCD46258130A500EEEBE1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 532DCD45258130A500EEEBE1 /* GoogleService-Info.plist */; };
 		53401F2B25792538003D41A5 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53401F2A25792538003D41A5 /* MainTabBarController.swift */; };
 		53401F2E25792624003D41A5 /* PeopleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53401F2D25792624003D41A5 /* PeopleViewController.swift */; };
@@ -52,6 +54,8 @@
 /* Begin PBXFileReference section */
 		38D6B33BC8406649370FCA50 /* Pods-wios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wios.release.xcconfig"; path = "Target Support Files/Pods-wios/Pods-wios.release.xcconfig"; sourceTree = "<group>"; };
 		416F84C89B440AC59D565E5F /* Pods_wios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_wios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		53206AF9258210D400805F95 /* Validators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validators.swift; sourceTree = "<group>"; };
+		53206AFC2582147A00805F95 /* AuthError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthError.swift; sourceTree = "<group>"; };
 		532DCD45258130A500EEEBE1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		53401F2A25792538003D41A5 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		53401F2D25792624003D41A5 /* PeopleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleViewController.swift; sourceTree = "<group>"; };
@@ -117,6 +121,24 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		53206AFF2582194A00805F95 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Helpers;
+			path = ../../..;
+			sourceTree = "<group>";
+		};
+		53206B002582195200805F95 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				53206AF9258210D400805F95 /* Validators.swift */,
+				53206AFC2582147A00805F95 /* AuthError.swift */,
+			);
+			name = Helpers;
+			path = ..;
+			sourceTree = "<group>";
+		};
 		53401F2825792466003D41A5 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -156,9 +178,10 @@
 				53515FD52575510C007C2DE4 /* SceneDelegate.swift */,
 				53FD648325813CCA008CE6D3 /* Services */,
 				53401F2825792466003D41A5 /* Controllers */,
-				53AF9FE4257BD2C800C3A225 /* Protocols */,
 				53CF564C2579137000F5B523 /* Signin&Auth */,
+				53AF9FE4257BD2C800C3A225 /* Protocols */,
 				53B2A69A257654BF00942C4C /* Extension */,
+				53206B002582195200805F95 /* Helpers */,
 				53515FDC2575510E007C2DE4 /* Assets.xcassets */,
 				53515FDE2575510E007C2DE4 /* LaunchScreen.storyboard */,
 				53515FE12575510E007C2DE4 /* Info.plist */,
@@ -191,6 +214,7 @@
 		53B2A698257654B100942C4C /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				53206AFF2582194A00805F95 /* Helpers */,
 				534AB7412579056100BBE235 /* SegmentedControll + Extension.swift */,
 				53B2A68F25764E2B00942C4C /* UIColor + Extension.swift */,
 				53B2A6892576495F00942C4C /* UIButton + Extension.swift */,
@@ -405,6 +429,7 @@
 				53DC1092257D2677008EC261 /* UserCell.swift in Sources */,
 				53DC1096257D30A0008EC261 /* UIViewController + Extension.swift in Sources */,
 				53AF9FE2257BD1EC00C3A225 /* SelfConfiguringCell.swift in Sources */,
+				53206AFA258210D400805F95 /* Validators.swift in Sources */,
 				53AF9FDF257BCB6400C3A225 /* WaitingChatCell.swift in Sources */,
 				53FD648525813D20008CE6D3 /* AuthService.swift in Sources */,
 				53C8A4D02577B95900C87D59 /* LoginViewController.swift in Sources */,
@@ -412,6 +437,7 @@
 				53515FD62575510C007C2DE4 /* SceneDelegate.swift in Sources */,
 				53B2A68A2576495F00942C4C /* UIButton + Extension.swift in Sources */,
 				5361EFAE2576669700900A8F /* StackView + Extension.swift in Sources */,
+				53206AFD2582147A00805F95 /* AuthError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
