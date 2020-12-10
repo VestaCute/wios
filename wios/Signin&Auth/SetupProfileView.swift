@@ -7,6 +7,7 @@
 
 import UIKit
 import SwiftUI
+import FirebaseAuth
 
 class SetupProfileViewController: UIViewController {
     
@@ -20,6 +21,18 @@ class SetupProfileViewController: UIViewController {
     
     let goToChatsButtom = UIButton(title: "Done", titleColor: .white, backgroundColor: .link, cornerRarius: 4)
     
+    private let currentUser: User
+    
+    init(currentUser: User) {
+        self.currentUser = currentUser
+        super.init(nibName: nil, bundle: nil)
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
+    
     let fullImageView = AddPhotoView()
     
     override func viewDidLoad() {
@@ -28,6 +41,18 @@ class SetupProfileViewController: UIViewController {
         
         view.backgroundColor = .white
         setupConstraints()
+        goToChatsButtom.addTarget(self, action: #selector(goToChatsButtomTapped), for: .touchUpInside)
+    }
+    @objc private func goToChatsButtomTapped() {
+        FirestoreService.shared.saveProfileWith(id: currentUser.uid, email: currentUser.email!, username: fullNameTextField.text, avatarImageString: "Not now", description: aboutMeTextField.text, gender: genderSegmentedControll.titleForSegment(at: genderSegmentedControll.selectedSegmentIndex)) { (result) in
+            switch result {
+            
+            case .success(_):
+                return
+            case .failure(let error):
+                self.showAlert(with: "Ошибка", and: error.localizedDescription)
+            }
+        }
     }
 }
 
@@ -69,7 +94,7 @@ struct SetupProfileVCProvider: PreviewProvider {
     }
     struct ContainerView: UIViewControllerRepresentable {
         
-        let setupProfileVC = SetupProfileViewController()
+        let setupProfileVC = SetupProfileViewController(currentUser: Auth.auth().currentUser!)
         
         func makeUIViewController(context: Context) -> SetupProfileViewController {
             return setupProfileVC

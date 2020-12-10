@@ -1,5 +1,5 @@
 //
-//  SingUpViewController .swift
+//  SignUpViewController .swift
 //  wios
 //
 //  Created by Sasha Kondratjeva on 01.12.2020.
@@ -9,7 +9,7 @@ import UIKit
 import SwiftUI
 
 
-class SingUpViewController: UIViewController {
+class SignUpViewController: UIViewController {
     
     
     let emailLabel = UILabel(text: "Email")
@@ -31,6 +31,8 @@ class SingUpViewController: UIViewController {
         return button
     }()
     
+    weak var delegate: AuthNavigationDelegate?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -39,6 +41,7 @@ class SingUpViewController: UIViewController {
         setupConstraints()
         
         signUpButton.addTarget(self, action: #selector(singUpButtonTapped), for: .touchUpInside)
+        loginButton.addTarget(self, action: #selector(loginButtonTapped), for: .touchUpInside)
     }
     
     @objc private func singUpButtonTapped() {
@@ -47,17 +50,25 @@ class SingUpViewController: UIViewController {
             switch result {
             
             case .success(let user):
-                self.showAlert(with: "Успешно", and: "Вы зарегистрированы")
-                print(user.email)
+                self.showAlert(with: "Успешно", and: "Вы зарегистрированы") {
+                    self.present(SetupProfileViewController(currentUser: user), animated: true, completion: nil)
+                }
+                
             case .failure(let error):
                 self.showAlert(with: "Произошла ошибка!", and: error.localizedDescription)
             }
         }
     }
+    
+    @objc private func loginButtonTapped() {
+        self.dismiss(animated: true) {
+            self.delegate?.toLoginVC()
+        }
+    }
 }
 
 // Setup Constraints
-extension SingUpViewController {
+extension SignUpViewController {
     private func setupConstraints() {
         
         let emailStackView = UIStackView(arrangedSubviews: [emailLabel, emailTextField], axis: .vertical, spacing: 0)
@@ -99,9 +110,9 @@ struct SingUpVCProvider: PreviewProvider {
     }
     struct ContainerView: UIViewControllerRepresentable {
         
-        let singUpVC = SingUpViewController()
+        let singUpVC = SignUpViewController()
         
-        func makeUIViewController(context: Context) -> SingUpViewController {
+        func makeUIViewController(context: Context) -> SignUpViewController {
             return singUpVC
         }
         func updateUIViewController(_ uiViewController: UIViewControllerType, context: Context) {
@@ -110,9 +121,11 @@ struct SingUpVCProvider: PreviewProvider {
 }
 
 extension UIViewController {
-    func showAlert (with titile: String, and message: String) {
+    func showAlert (with titile: String, and message: String, completion: @escaping() -> Void = { }) {
         let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
-        let okAction = UIAlertAction(title: "OK", style: .default, handler: nil)
+        let okAction = UIAlertAction(title: "OK", style: .default) {(_) in
+            completion()
+        }
         alertController.addAction(okAction)
         present(alertController, animated: true, completion: nil)
     }

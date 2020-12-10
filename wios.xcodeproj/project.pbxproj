@@ -21,7 +21,7 @@
 		53515FE02575510E007C2DE4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53515FDE2575510E007C2DE4 /* LaunchScreen.storyboard */; };
 		5361EFAB25765DDD00900A8F /* ButtonFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5361EFAA25765DDD00900A8F /* ButtonFormView.swift */; };
 		5361EFAE2576669700900A8F /* StackView + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5361EFAD2576669700900A8F /* StackView + Extension.swift */; };
-		5361EFB3257674D800900A8F /* SingUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5361EFB2257674D800900A8F /* SingUpViewController.swift */; };
+		5361EFB3257674D800900A8F /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5361EFB2257674D800900A8F /* SignUpViewController.swift */; };
 		53656FD3257BA79C003C1307 /* Bundle-Decodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53656FD2257BA79C003C1307 /* Bundle-Decodable.swift */; };
 		538281CF25769A32003ED7E7 /* OneLineTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 538281CE25769A32003ED7E7 /* OneLineTextField.swift */; };
 		538FD55F257FE452005DBE44 /* InsertableTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 538FD55E257FE452005DBE44 /* InsertableTextField.swift */; };
@@ -39,7 +39,10 @@
 		53B2A69025764E2B00942C4C /* UIColor + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B2A68F25764E2B00942C4C /* UIColor + Extension.swift */; };
 		53B2A6932576523A00942C4C /* Label + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B2A6922576523A00942C4C /* Label + Extension.swift */; };
 		53B2A6962576537F00942C4C /* UIImageView + Extension .swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B2A6952576537F00942C4C /* UIImageView + Extension .swift */; };
+		53B305D025823DD400B2A424 /* Firestoreservice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B305CF25823DD400B2A424 /* Firestoreservice.swift */; };
+		53C3BCF52582445D0044E6A6 /* UserError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C3BCF42582445D0044E6A6 /* UserError.swift */; };
 		53C8A4D02577B95900C87D59 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C8A4CF2577B95900C87D59 /* LoginViewController.swift */; };
+		53CCA8D5258233B9002A3D03 /* AuthNavigationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53CCA8D4258233B9002A3D03 /* AuthNavigationDelegate.swift */; };
 		53CF564F2579143900F5B523 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53CF564E2579143900F5B523 /* ListViewController.swift */; };
 		53D121832578E86B000D4BFD /* SetupProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53D121822578E86B000D4BFD /* SetupProfileView.swift */; };
 		53DC1088257D1F3A008EC261 /* MUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53DC1087257D1F3A008EC261 /* MUser.swift */; };
@@ -70,7 +73,7 @@
 		53515FE12575510E007C2DE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5361EFAA25765DDD00900A8F /* ButtonFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonFormView.swift; sourceTree = "<group>"; };
 		5361EFAD2576669700900A8F /* StackView + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StackView + Extension.swift"; sourceTree = "<group>"; };
-		5361EFB2257674D800900A8F /* SingUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingUpViewController.swift; sourceTree = "<group>"; };
+		5361EFB2257674D800900A8F /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		53656FD2257BA79C003C1307 /* Bundle-Decodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle-Decodable.swift"; sourceTree = "<group>"; };
 		538281CE25769A32003ED7E7 /* OneLineTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = OneLineTextField.swift; path = wios/OneLineTextField.swift; sourceTree = SOURCE_ROOT; };
 		538FD55E257FE452005DBE44 /* InsertableTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsertableTextField.swift; sourceTree = "<group>"; };
@@ -88,7 +91,10 @@
 		53B2A68F25764E2B00942C4C /* UIColor + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor + Extension.swift"; sourceTree = "<group>"; };
 		53B2A6922576523A00942C4C /* Label + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Label + Extension.swift"; sourceTree = "<group>"; };
 		53B2A6952576537F00942C4C /* UIImageView + Extension .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView + Extension .swift"; sourceTree = "<group>"; };
+		53B305CF25823DD400B2A424 /* Firestoreservice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Firestoreservice.swift; sourceTree = "<group>"; };
+		53C3BCF42582445D0044E6A6 /* UserError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserError.swift; sourceTree = "<group>"; };
 		53C8A4CF2577B95900C87D59 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		53CCA8D4258233B9002A3D03 /* AuthNavigationDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AuthNavigationDelegate.swift; path = "wios/Signin&Auth/AuthNavigationDelegate.swift"; sourceTree = SOURCE_ROOT; };
 		53CF564E2579143900F5B523 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		53D121822578E86B000D4BFD /* SetupProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupProfileView.swift; sourceTree = "<group>"; };
 		53DC1087257D1F3A008EC261 /* MUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MUser.swift; sourceTree = "<group>"; };
@@ -196,6 +202,7 @@
 		53AF9FE4257BD2C800C3A225 /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
+				53CCA8D4258233B9002A3D03 /* AuthNavigationDelegate.swift */,
 				53AF9FE1257BD1EC00C3A225 /* SelfConfiguringCell.swift */,
 			);
 			path = Protocols;
@@ -235,7 +242,7 @@
 			isa = PBXGroup;
 			children = (
 				53515FD72575510C007C2DE4 /* AuthViewController.swift */,
-				5361EFB2257674D800900A8F /* SingUpViewController.swift */,
+				5361EFB2257674D800900A8F /* SignUpViewController.swift */,
 				53C8A4CF2577B95900C87D59 /* LoginViewController.swift */,
 				53D121822578E86B000D4BFD /* SetupProfileView.swift */,
 			);
@@ -264,6 +271,7 @@
 			children = (
 				53206AF9258210D400805F95 /* Validators.swift */,
 				53206AFC2582147A00805F95 /* AuthError.swift */,
+				53C3BCF42582445D0044E6A6 /* UserError.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -273,6 +281,7 @@
 			children = (
 				53DC108D257D2144008EC261 /* Model */,
 				53FD648425813D20008CE6D3 /* AuthService.swift */,
+				53B305CF25823DD400B2A424 /* Firestoreservice.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -402,9 +411,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				53CCA8D5258233B9002A3D03 /* AuthNavigationDelegate.swift in Sources */,
 				53DC108B257D1FE7008EC261 /* MChat.swift in Sources */,
 				53CF564F2579143900F5B523 /* ListViewController.swift in Sources */,
+				53C3BCF52582445D0044E6A6 /* UserError.swift in Sources */,
 				538FD562257FE53B005DBE44 /* ChatRequestViewController.swift in Sources */,
+				53B305D025823DD400B2A424 /* Firestoreservice.swift in Sources */,
 				538281CF25769A32003ED7E7 /* OneLineTextField.swift in Sources */,
 				5340854B257BE80B00848094 /* SectionHeader.swift in Sources */,
 				53AF9FDA257BC50D00C3A225 /* GradientView.swift in Sources */,
@@ -415,7 +427,7 @@
 				53515FD82575510C007C2DE4 /* AuthViewController.swift in Sources */,
 				538FD55F257FE452005DBE44 /* InsertableTextField.swift in Sources */,
 				53401F2E25792624003D41A5 /* PeopleViewController.swift in Sources */,
-				5361EFB3257674D800900A8F /* SingUpViewController.swift in Sources */,
+				5361EFB3257674D800900A8F /* SignUpViewController.swift in Sources */,
 				53FE01FB257FE256001A7233 /* ProfileViewController.swift in Sources */,
 				53656FD3257BA79C003C1307 /* Bundle-Decodable.swift in Sources */,
 				53B2A6932576523A00942C4C /* Label + Extension.swift in Sources */,

@@ -8,6 +8,7 @@
 import Foundation
 
 class Validators {
+    
     static func isField (email: String?, password: String?, confirmPassword: String?) -> Bool {
         guard let password = password,
               let confirmPassword = confirmPassword,
@@ -15,6 +16,18 @@ class Validators {
               password != "",
               confirmPassword != "",
               email != "" else {
+            return false
+        }
+        return true
+    }
+    
+    static func isField (username: String?, description: String?, gender: String?) -> Bool {
+        guard let username = username,
+              let description = description,
+              let gender = gender,
+              description != "",
+              gender != "",
+              username != "" else {
             return false
         }
         return true
