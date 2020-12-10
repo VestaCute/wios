@@ -15,6 +15,8 @@ class SetupProfileViewController: UIViewController {
     let AboutMeLabel = UILabel(text: "About me")
     let genderLabel = UILabel(text: "Gender")
     
+    let fullImageView = AddPhotoView()
+    
     let fullNameTextField = OneLineTextField(font: .SFPro20())
     let aboutMeTextField = OneLineTextField(font: .SFPro20())
     let genderSegmentedControll = UISegmentedControl(first: "Male", second: "Femail", other: "Other")
@@ -32,26 +34,32 @@ class SetupProfileViewController: UIViewController {
         fatalError("init(coder:) has not been implemented")
     }
     
-    
-    let fullImageView = AddPhotoView()
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         
         view.backgroundColor = .white
         setupConstraints()
-        goToChatsButtom.addTarget(self, action: #selector(goToChatsButtomTapped), for: .touchUpInside)
+        goToChatsButtom.addTarget(self, action: #selector(goToChatsButtonTapped), for: .touchUpInside)
     }
-    @objc private func goToChatsButtomTapped() {
-        FirestoreService.shared.saveProfileWith(id: currentUser.uid, email: currentUser.email!, username: fullNameTextField.text, avatarImageString: "Not now", description: aboutMeTextField.text, gender: genderSegmentedControll.titleForSegment(at: genderSegmentedControll.selectedSegmentIndex)) { (result) in
-            switch result {
-            
-            case .success(_):
-                return
-            case .failure(let error):
-                self.showAlert(with: "Ошибка", and: error.localizedDescription)
-            }
+    @objc private func goToChatsButtonTapped() {
+        
+        FirestoreService.shared.saveProfileWith(
+            id: currentUser.uid,
+            email: currentUser.email!,
+            username: fullNameTextField.text,
+            avatarImageString: "nil",
+            description: aboutMeTextField.text,
+            gender: genderSegmentedControll.titleForSegment(at: genderSegmentedControll.selectedSegmentIndex)) { (result) in
+                switch result {
+                    
+                case .success(let muser):
+                    self.showAlert(with: "Успешно!", and: "Данные сохранены!", completion: {
+                        self.present(MainTabBarController(), animated: true, completion: nil)
+                    })
+                case .failure(let error):
+                    self.showAlert(with: "Ошибка!", and: error.localizedDescription)
+                }
         }
     }
 }

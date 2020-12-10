@@ -23,9 +23,7 @@ class Validators {
     
     static func isField (username: String?, description: String?, gender: String?) -> Bool {
         guard let username = username,
-              let description = description,
               let gender = gender,
-              description != "",
               gender != "",
               username != "" else {
             return false

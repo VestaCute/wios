@@ -13,6 +13,9 @@
 		53401F2B25792538003D41A5 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53401F2A25792538003D41A5 /* MainTabBarController.swift */; };
 		53401F2E25792624003D41A5 /* PeopleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53401F2D25792624003D41A5 /* PeopleViewController.swift */; };
 		5340854B257BE80B00848094 /* SectionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5340854A257BE80B00848094 /* SectionHeader.swift */; };
+		5349149625828821007B1C05 /* activeChats.json in Resources */ = {isa = PBXBuildFile; fileRef = 5349149325828821007B1C05 /* activeChats.json */; };
+		5349149725828821007B1C05 /* users.json in Resources */ = {isa = PBXBuildFile; fileRef = 5349149425828821007B1C05 /* users.json */; };
+		5349149825828821007B1C05 /* waitingChats.json in Resources */ = {isa = PBXBuildFile; fileRef = 5349149525828821007B1C05 /* waitingChats.json */; };
 		534AB7422579056100BBE235 /* SegmentedControll + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534AB7412579056100BBE235 /* SegmentedControll + Extension.swift */; };
 		53515FD42575510C007C2DE4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53515FD32575510C007C2DE4 /* AppDelegate.swift */; };
 		53515FD62575510C007C2DE4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53515FD52575510C007C2DE4 /* SceneDelegate.swift */; };
@@ -26,9 +29,6 @@
 		538281CF25769A32003ED7E7 /* OneLineTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 538281CE25769A32003ED7E7 /* OneLineTextField.swift */; };
 		538FD55F257FE452005DBE44 /* InsertableTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 538FD55E257FE452005DBE44 /* InsertableTextField.swift */; };
 		538FD562257FE53B005DBE44 /* ChatRequestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 538FD561257FE53B005DBE44 /* ChatRequestViewController.swift */; };
-		53AF2617257D3E0100388CB8 /* users.json in Resources */ = {isa = PBXBuildFile; fileRef = 53AF2614257D3E0100388CB8 /* users.json */; };
-		53AF2618257D3E0100388CB8 /* activeChats.json in Resources */ = {isa = PBXBuildFile; fileRef = 53AF2615257D3E0100388CB8 /* activeChats.json */; };
-		53AF2619257D3E0100388CB8 /* waitingChats.json in Resources */ = {isa = PBXBuildFile; fileRef = 53AF2616257D3E0100388CB8 /* waitingChats.json */; };
 		53AF9FD6257BB32300C3A225 /* ActiveChatCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53AF9FD5257BB32300C3A225 /* ActiveChatCell.swift */; };
 		53AF9FDA257BC50D00C3A225 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53AF9FD9257BC50D00C3A225 /* GradientView.swift */; };
 		53AF9FDF257BCB6400C3A225 /* WaitingChatCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53AF9FDE257BCB6400C3A225 /* WaitingChatCell.swift */; };
@@ -63,6 +63,9 @@
 		53401F2A25792538003D41A5 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		53401F2D25792624003D41A5 /* PeopleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleViewController.swift; sourceTree = "<group>"; };
 		5340854A257BE80B00848094 /* SectionHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionHeader.swift; sourceTree = "<group>"; };
+		5349149325828821007B1C05 /* activeChats.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = activeChats.json; sourceTree = "<group>"; };
+		5349149425828821007B1C05 /* users.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = users.json; sourceTree = "<group>"; };
+		5349149525828821007B1C05 /* waitingChats.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = waitingChats.json; sourceTree = "<group>"; };
 		534AB7412579056100BBE235 /* SegmentedControll + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SegmentedControll + Extension.swift"; sourceTree = "<group>"; };
 		53515FD02575510C007C2DE4 /* wios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = wios.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		53515FD32575510C007C2DE4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -78,9 +81,6 @@
 		538281CE25769A32003ED7E7 /* OneLineTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = OneLineTextField.swift; path = wios/OneLineTextField.swift; sourceTree = SOURCE_ROOT; };
 		538FD55E257FE452005DBE44 /* InsertableTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsertableTextField.swift; sourceTree = "<group>"; };
 		538FD561257FE53B005DBE44 /* ChatRequestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRequestViewController.swift; sourceTree = "<group>"; };
-		53AF2614257D3E0100388CB8 /* users.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = users.json; path = "../../../Downloads/[SwiftBook] Программирование на Swift/28. Курс По Мессенджеру IChat/21. App Users Screen Cells/21. урок/IChat/users.json"; sourceTree = "<group>"; };
-		53AF2615257D3E0100388CB8 /* activeChats.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = activeChats.json; path = "../../../Downloads/[SwiftBook] Программирование на Swift/28. Курс По Мессенджеру IChat/21. App Users Screen Cells/21. урок/IChat/activeChats.json"; sourceTree = "<group>"; };
-		53AF2616257D3E0100388CB8 /* waitingChats.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = waitingChats.json; path = "../../../Downloads/[SwiftBook] Программирование на Swift/28. Курс По Мессенджеру IChat/21. App Users Screen Cells/21. урок/IChat/waitingChats.json"; sourceTree = "<group>"; };
 		53AF9FD5257BB32300C3A225 /* ActiveChatCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiveChatCell.swift; sourceTree = "<group>"; };
 		53AF9FD9257BC50D00C3A225 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		53AF9FDE257BCB6400C3A225 /* WaitingChatCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaitingChatCell.swift; sourceTree = "<group>"; };
@@ -182,9 +182,9 @@
 				53515FDE2575510E007C2DE4 /* LaunchScreen.storyboard */,
 				53515FE12575510E007C2DE4 /* Info.plist */,
 				532DCD45258130A500EEEBE1 /* GoogleService-Info.plist */,
-				53AF2615257D3E0100388CB8 /* activeChats.json */,
-				53AF2614257D3E0100388CB8 /* users.json */,
-				53AF2616257D3E0100388CB8 /* waitingChats.json */,
+				5349149325828821007B1C05 /* activeChats.json */,
+				5349149425828821007B1C05 /* users.json */,
+				5349149525828821007B1C05 /* waitingChats.json */,
 			);
 			path = wios;
 			sourceTree = "<group>";
@@ -353,12 +353,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				53AF2617257D3E0100388CB8 /* users.json in Resources */,
+				5349149725828821007B1C05 /* users.json in Resources */,
 				53515FE02575510E007C2DE4 /* LaunchScreen.storyboard in Resources */,
-				53AF2618257D3E0100388CB8 /* activeChats.json in Resources */,
 				53515FDD2575510E007C2DE4 /* Assets.xcassets in Resources */,
-				53AF2619257D3E0100388CB8 /* waitingChats.json in Resources */,
+				5349149825828821007B1C05 /* waitingChats.json in Resources */,
 				532DCD46258130A500EEEBE1 /* GoogleService-Info.plist in Resources */,
+				5349149625828821007B1C05 /* activeChats.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
