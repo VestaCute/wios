@@ -21,7 +21,7 @@ class PeopleViewController: UIViewController {
         func description(usersCount: Int) -> String {
             switch self {
             case .users:
-                return "\(usersCount) people nearby"
+                return "\(usersCount) сервисов доступно"
             }
         }
     }
@@ -46,7 +46,8 @@ class PeopleViewController: UIViewController {
         createDataSource()
         reloadData(with: nil)
         
-        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Log Out", style: .plain, target: self, action: #selector(signOut))
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Выйти", style: .plain, target: self, action: #selector(signOut))
+        navigationItem.rightBarButtonItem?.tintColor = .systemRed
     }
     
     @objc private func signOut() {
