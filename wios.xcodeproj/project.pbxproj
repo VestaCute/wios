@@ -45,6 +45,8 @@
 		53CCA8D5258233B9002A3D03 /* AuthNavigationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53CCA8D4258233B9002A3D03 /* AuthNavigationDelegate.swift */; };
 		53CF564F2579143900F5B523 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53CF564E2579143900F5B523 /* ListViewController.swift */; };
 		53D121832578E86B000D4BFD /* SetupProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53D121822578E86B000D4BFD /* SetupProfileView.swift */; };
+		53D236C325834A4C0016BA0C /* StorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53D236C225834A4C0016BA0C /* StorageService.swift */; };
+		53D236DB25834D680016BA0C /* UIImage + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53D236DA25834D680016BA0C /* UIImage + Extension.swift */; };
 		53DC1088257D1F3A008EC261 /* MUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53DC1087257D1F3A008EC261 /* MUser.swift */; };
 		53DC108B257D1FE7008EC261 /* MChat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53DC108A257D1FE7008EC261 /* MChat.swift */; };
 		53DC1092257D2677008EC261 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53DC1091257D2677008EC261 /* UserCell.swift */; };
@@ -97,6 +99,8 @@
 		53CCA8D4258233B9002A3D03 /* AuthNavigationDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AuthNavigationDelegate.swift; path = "wios/Signin&Auth/AuthNavigationDelegate.swift"; sourceTree = SOURCE_ROOT; };
 		53CF564E2579143900F5B523 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		53D121822578E86B000D4BFD /* SetupProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupProfileView.swift; sourceTree = "<group>"; };
+		53D236C225834A4C0016BA0C /* StorageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageService.swift; sourceTree = "<group>"; };
+		53D236DA25834D680016BA0C /* UIImage + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage + Extension.swift"; sourceTree = "<group>"; };
 		53DC1087257D1F3A008EC261 /* MUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MUser.swift; sourceTree = "<group>"; };
 		53DC108A257D1FE7008EC261 /* MChat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MChat.swift; sourceTree = "<group>"; };
 		53DC1091257D2677008EC261 /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
@@ -220,6 +224,7 @@
 				53B2A6952576537F00942C4C /* UIImageView + Extension .swift */,
 				5361EFAD2576669700900A8F /* StackView + Extension.swift */,
 				53DC1095257D30A0008EC261 /* UIViewController + Extension.swift */,
+				53D236DA25834D680016BA0C /* UIImage + Extension.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -282,6 +287,7 @@
 				53DC108D257D2144008EC261 /* Model */,
 				53FD648425813D20008CE6D3 /* AuthService.swift */,
 				53B305CF25823DD400B2A424 /* Firestoreservice.swift */,
+				53D236C225834A4C0016BA0C /* StorageService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -418,11 +424,13 @@
 				538FD562257FE53B005DBE44 /* ChatRequestViewController.swift in Sources */,
 				53B305D025823DD400B2A424 /* Firestoreservice.swift in Sources */,
 				538281CF25769A32003ED7E7 /* OneLineTextField.swift in Sources */,
+				53D236C325834A4C0016BA0C /* StorageService.swift in Sources */,
 				5340854B257BE80B00848094 /* SectionHeader.swift in Sources */,
 				53AF9FDA257BC50D00C3A225 /* GradientView.swift in Sources */,
 				53401F2B25792538003D41A5 /* MainTabBarController.swift in Sources */,
 				53B2A68D25764CBB00942C4C /* UIFont + Extension.swift in Sources */,
 				53DC1088257D1F3A008EC261 /* MUser.swift in Sources */,
+				53D236DB25834D680016BA0C /* UIImage + Extension.swift in Sources */,
 				53AF9FD6257BB32300C3A225 /* ActiveChatCell.swift in Sources */,
 				53515FD82575510C007C2DE4 /* AuthViewController.swift in Sources */,
 				538FD55F257FE452005DBE44 /* InsertableTextField.swift in Sources */,
