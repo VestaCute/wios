@@ -7,6 +7,9 @@ How to Install
 3. Install this packages: 
 
 pod 'Firebase/Analytics'
+
 pod 'Firebase/Auth'
+
 pod 'Firebase/Firestore'
+
 pod 'Firebase/Storage'
