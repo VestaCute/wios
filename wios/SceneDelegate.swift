@@ -1,9 +1,10 @@
 //
-//  SceneDelegate.swift
+//  StorageService.swift
 //  wios
 //
-//  Created by Sasha Kondratjeva on 30.11.2020.
+//  Created by Sasha Kondratjeva on 11.12.2020.
 //
+
 
 import UIKit
 import FirebaseAuth
@@ -21,8 +22,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         if let user = Auth.auth().currentUser {
             FirestoreService.shared.getUserData(user: user) { (result) in
                 switch result {
-                case .success(let mUser):
-                    let mainTabBar = MainTabBarController(currentUser: mUser)
+                case .success(let muser):
+                    let mainTabBar = MainTabBarController(currentUser: muser)
                     mainTabBar.modalPresentationStyle = .fullScreen
                     self.window?.rootViewController = mainTabBar
                 case .failure(_):
@@ -39,7 +40,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // Called as the scene is being released by the system.
         // This occurs shortly after the scene enters the background, or when its session is discarded.
         // Release any resources associated with this scene that can be re-created the next time the scene connects.
-        // The scene may re-connect later, as its session was not necessarily discarded (see `application:didDiscardSceneSessions` instead).
+        // The scene may re-connect later, as its session was not neccessarily discarded (see `application:didDiscardSceneSessions` instead).
     }
 
     func sceneDidBecomeActive(_ scene: UIScene) {

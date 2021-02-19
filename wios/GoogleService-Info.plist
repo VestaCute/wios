@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>620728293937-3ei1env1h5jiab7r1dr15g8c8d8d8g1g.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.620728293937-3ei1env1h5jiab7r1dr15g8c8d8d8g1g</string>
+	<key>API_KEY</key>
+	<string>AIzaSyAibT-QxGgwPPkpLGPmLcdEtwVhifWqbmE</string>
+	<key>GCM_SENDER_ID</key>
+	<string>620728293937</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>Kond1ateff.com.wios</string>
+	<key>PROJECT_ID</key>
+	<string>wios-e9ea4</string>
+	<key>STORAGE_BUCKET</key>
+	<string>wios-e9ea4.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:620728293937:ios:202036112ad7d352261310</string>
+	<key>DATABASE_URL</key>
+	<string>https://wios-e9ea4-default-rtdb.europe-west1.firebasedatabase.app</string>
+</dict>
+</plist>

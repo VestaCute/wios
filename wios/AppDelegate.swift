@@ -1,20 +1,30 @@
 //
-//  AppDelegate.swift
+//  StorageService.swift
 //  wios
 //
-//  Created by Sasha Kondratjeva on 30.11.2020.
+//  Created by Sasha Kondratjeva on 11.12.2020.
 //
+
 
 import UIKit
 import Firebase
-import FirebaseStorage
+import GoogleSignIn
 
-@main
+@UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
+
+
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         FirebaseApp.configure()
+        GIDSignIn.sharedInstance().clientID = FirebaseApp.app()?.options.clientID
         return true
+    }
+    
+    @available(iOS 9.0, *)
+    func application(_ application: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any])
+      -> Bool {
+      return GIDSignIn.sharedInstance().handle(url)
     }
 
     // MARK: UISceneSession Lifecycle
